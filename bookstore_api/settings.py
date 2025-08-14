@@ -31,7 +31,9 @@ if not SECRET_KEY:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'b7c2552053c6.ngrok-free.app'
+]
 
 
 # Application definition
@@ -43,6 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'rest_framework',
+
+
+    'library',
 ]
 
 MIDDLEWARE = [
